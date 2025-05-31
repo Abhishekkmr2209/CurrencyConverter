@@ -63,19 +63,19 @@ body{
 .converterIcon{
     margin:1.5rem 0;
 }
-.footer{
+.msg{
     width:100%;
     border:0.4rem solid white;
     border-radius:0.3rem;
     margin:1rem 0;
 }
-.footer p{
+.msg p{
     text-align:center;
     font-size:2rem;
     margin-bottom:1rem;
 
 }
-.footer button{
+.msg button{
     margin:auto;
     display:block;
     height:2rem;
