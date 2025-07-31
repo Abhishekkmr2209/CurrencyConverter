@@ -1,83 +1,14 @@
 *{
-    box-sizing:border-box;
-    padding:0;
+    box-sizing :border-box;
     margin:0;
+    padding:0;
+    font-family:"League Spartan", sans-serif;
 }
-/*------- Base Style (max-width:414px) -------*/
 body{
-    min-width:414px;
-    overflow-x:auto;
-    background-color: #f4e4ba;
-    min-height:100vh;
-}
-.container{
-   width:100%;
-   border:0.1rem solid lightgray;
-   min-height:100vh;
+    background-color: #732d7f;
 
 }
-.header{
-    width:100%;
+#header{
     text-align:center;
-    margin:2rem 0;
-    border:0.3em solid white;
-    padding:1rem;
-    background-image:url("images/arrows.png");
-    background-color:rgb(0,0,0,0.5);
-    border-radius:0.5rem;
-}
-.amountDiv{
-    width:100%;
-    text-align:center;
-    margin-bottom:1rem;
-}
-.amountDiv label{
-    font-size:1.5rem;
-}
-.amountDiv input{
-    width:80%;
-    height:2rem;
-}
-.dropDown p{
-    width:50%;
-    text-align:center;
-    color:blue;
-    font-size:2rem;
-}
-.select-container img{
-    display:block;
-    margin:auto;
-    min-width:30%;
-}
-.select-container select{
-    display:block;
-    margin:auto;
-    width:30%;
-    height:2rem;
-}
-.dropDown .converterIcon img{
-    display:block;
-    margin:auto;
-    
-}
-.converterIcon{
-    margin:1.5rem 0;
-}
-.msg{
-    width:100%;
-    border:0.4rem solid white;
-    border-radius:0.3rem;
-    margin:1rem 0;
-}
-.msg p{
-    text-align:center;
-    font-size:2rem;
-    margin-bottom:1rem;
-
-}
-.msg button{
-    margin:auto;
-    display:block;
-    height:2rem;
-    background-color:violet;
+    padding:40px;
 }
