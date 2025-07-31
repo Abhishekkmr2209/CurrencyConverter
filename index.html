@@ -6,54 +6,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
     </head>
     <body>
-        <div class="container">
-            <div class="header">
-                <h2>Currency Converter</h2>
-            </div>
-            <form class="converterForm">
-                <div class="amountDiv">
-                    <label for="amount">Enter Amount</label><br/>
-                    <input type="text" name="amount" id="amount"/>
-                </div>
-                <div class="dropDown">
-                    <div class="from">
-                        <p>From</p>
-                        <div class="select-container">
-                        <img src="https://flagsapi.com/IN/flat/64.png">
-                        <select name="From">
-                            <option value="INR" selected>INR</option>
-                            <option value="EUR" >EUR</option>
-                            <option value="USD">USD</option> 
-                        </select>
-                        </div>
-                    </div>
-                    <div class="converterIcon">
-                        <img src="images/arrows.png" />
-                    </div>
-                    <div class="to">    
-                        <p>To</p>
-                        <div class="select-container">
-                        <img src="https://flagsapi.com/US/flat/64.png">
-                        <select name="To">
-                            <option value="INR" >INR</option>
-                            <option value="EUR" >EUR</option>
-                            <option value="USD" selected>USD</option> 
-                        </select>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="msg">
-                    <p></p>
-                    <button class="button">Get Exchange Rate</button>
-                </div>
-            </form>    
+        <div id="header">
+            <h2>Get Currency Exchange Rates</h2>
         </div>
-        <script src="codes.js" defer></script>
-        <script src="app.js" defer></script>
-
+        
     </body>
 </html>
