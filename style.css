@@ -9,6 +9,235 @@ body{
 
 }
 #header{
-    text-align:center;
-    padding:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    padding:25px;
+    background-color:#e2e9e1;
+    margin-bottom:80px;
+}
+#header img{
+    width:50px;
+}
+#header h1{
+    color:#000;
+    padding:10px 0;
+}
+#main{
+    background-color:#fff;
+    padding:40px 80px;
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    border-radius:8px;
+    margin-bottom:40px;
+    
+}
+#main > h2{
+    text-align:start;
+    margin-bottom:20px;
+    padding:20px;
+    background: linear-gradient(90deg, #ffffff, #f7f7f7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    width:60%;
+}
+#main #converterContainer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 0;
+    flex-wrap:wrap;
+}
+
+#amountContainer,
+#fromContainer,
+#toContainer{
+    width:30%;
+    padding:20px;
+    border:none;
+    border-radius:12px;
+    background-color:#fdfdfd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+}
+#amountContainer:hover,
+#fromContainer:hover,
+#toContainer:hover{
+    transform: translateY(-2px);
+}
+
+
+#amountContainer h2,
+#fromContainer h2,
+#toContainer h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #333;
+}
+#amountContainer form input {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    
+}
+#amountContainer form input:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+#main #converterContainer .exchange-icon-wrapper{
+    width:60px;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #088178;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    flex-shrink: 0;
+}
+#main #converterContainer .exchange-icon-wrapper img{
+    width:100%;
+    
+}
+
+#main #converterContainer .exchange-icon-wrapper:hover {
+    background-color: #0a9a91; 
+    transform: rotate(180deg) scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+/*
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ccc;
+  border-top: 3px solid #d13682;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+*/
+.currencySelectContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currencySelectContainer img {
+    width: 40px;
+    height: auto;
+}
+
+.currencySelectContainer select {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    appearance: none;
+    transition: border-color 0.3s ease;
+}
+
+.currencySelectContainer select:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+/* Convert button */
+.btn {
+    width: fit-content;
+    padding: 12px 24px;
+    background-color: #c73e8a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #574fd6;
+}
+#footer {
+    margin-top: 30px;
+    padding: 24px;
+    background: linear-gradient(90deg, #fefefe, #f3f3f3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#footer h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #1e1e1e;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+#footer h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6b6b6b;
+}
+
+
+
+/* Media Queries */
+
+/* For Medium Size Screens */
+@media (max-width:799px){
+
+#main > h2{
+    width:auto;
+}
+
+#main #converterContainer{
+    flex-direction:column;
+    align-items:stretch;
+}
+#amountContainer,
+#fromContainer,
+#toContainer{
+    width:100%;
+}
+#main #converterContainer .exchange-icon-wrapper{
+    margin:20px 0;
+    align-self:center;
+}
+#main #converterContainer .exchange-icon-wrapper img{
+    transform:rotate(90deg);
+}
+
+}
+
+/* for Smaller Screen Sizes */
+
+@media (max-width:477px){
+#main{
+    
+    padding:20px;
+    width: 90%;
+    
+}
+
 }
