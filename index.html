@@ -14,8 +14,54 @@
     </head>
     <body>
         <div id="header">
-            <h2>Get Currency Exchange Rates</h2>
+            <img src="images/exchange-rate.png" alt="">
+            <h1>Get Currency Exchange Rates</h1>
         </div>
+        
+        <div id="main">
+            <h2>Check live foreign currency exchange rates</h2>
+            
+            <div id="converterContainer">
+                <div id="amountContainer">
+                    <h2>Amount</h2>
+                    <form id="amountForm">
+                        <input type="number" min="1" placeholder="Enter amount..." required/>
+                    </form>
+                </div>
+
+                <div id="fromContainer">
+                    <h2>From</h2>
+                    <div class="currencySelectContainer">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="from">
+                        </select>
+                    </div>
+                </div>
+
+                <div id='swapButton' class="exchange-icon-wrapper ">
+                        <img src="images/exchange.png" alt="Exchange Icon">
+                </div>
+
+                <div id="toContainer">
+                    <h2>To</h2>
+                    <div class="currencySelectContainer">
+                        <img src="https://flagsapi.com/FR/flat/64.png">
+                        <select name="to">
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="btn">Convert</button>
+            <div id="footer">
+            <h1>🧑💭 Waiting...</h1> 
+            <!--<div><span class="spinner"></span> <strong>Waiting...</strong></div>-->
+            <h2>Live rates just 1 click away</h2>
+        </div>
+        </div>
+
+        <script src="codes.js" type="module"></script>
+        <script src="app.js" type="module"></script>
         
     </body>
 </html>
